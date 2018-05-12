@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <h3>Search</h3>
+    @*<form action="https://cse.google.com/cse/create/new" class="form-horizontal">*@
+        <form action="http://google.com/m/search" class="form-horizontal">
+            <br />
+            <input type="text" name="q" size="30%" maxlength="2048" value="" class="form-control" />
+            <input type="hidden" name="as_sitesearch" value="demo.com" />
+            <br />
+            <input type="submit" value="Search" class="btn btn-primary" />
+        </form> 
+    @*<script>
+  (function() {
+    var cx = '017170769576870882952:lsdb6ztdsxo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+    </script>
+    <gcse:search></gcse:search>*@
+   
+</div>
+

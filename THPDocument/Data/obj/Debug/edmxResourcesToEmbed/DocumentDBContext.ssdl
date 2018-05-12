@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DocumentsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="RoleID" Type="int" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="Sex" Type="bit" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="PhoneNumber" Type="int" />
+    <Property Name="Avatar" Type="image" />
+    <Property Name="About" Type="nvarchar" MaxLength="500" />
+    <Property Name="AccountRate" Type="float" />
+    <Property Name="AccountPoint" Type="int" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Bin">
+    <Key>
+      <PropertyRef Name="BinID" />
+    </Key>
+    <Property Name="BinID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DocumentID" Type="int" />
+    <Property Name="Customer" Type="int" />
+    <Property Name="DateBuy" Type="date" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComentName" Type="int" />
+    <Property Name="DateComment" Type="date" />
+    <Property Name="ComentContent" Type="nvarchar" MaxLength="500" />
+    <Property Name="DocumentID" Type="int" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="DocumentID" />
+    </Key>
+    <Property Name="DocumentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DocumentName" Type="nvarchar" MaxLength="350" />
+    <Property Name="DocumentContent" Type="nvarchar(max)" />
+    <Property Name="DocumentDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="DocumentPoint" Type="int" />
+    <Property Name="DatePost" Type="date" />
+    <Property Name="PostBy" Type="int" />
+    <Property Name="Thumbnail" Type="image" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="250" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="Rate" Type="float" />
+    <Property Name="DocumentFile" Type="nvarchar" MaxLength="550" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="Guestbook">
+    <Key>
+      <PropertyRef Name="GuestbookID" />
+    </Key>
+    <Property Name="GuestbookID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ChatContent" Type="nvarchar(max)" />
+    <Property Name="ChatTime" Type="date" />
+    <Property Name="ChatName" Type="int" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="NewsID" />
+    </Key>
+    <Property Name="NewsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NewsTitle" Type="nvarchar" MaxLength="350" />
+    <Property Name="Description" Type="nvarchar" MaxLength="350" />
+    <Property Name="NewsContent" Type="nvarchar(max)" />
+    <Property Name="Thumbnail" Type="image" />
+    <Property Name="CreateDate" Type="date" />
+    <Property Name="CreateBy" Type="int" />
+    <Property Name="TheardID" Type="int" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Report">
+    <Key>
+      <PropertyRef Name="ReportID" />
+    </Key>
+    <Property Name="ReportID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReportTitle" Type="nvarchar" MaxLength="350" />
+    <Property Name="ReportContent" Type="nvarchar" MaxLength="950" />
+    <Property Name="ReportDate" Type="date" />
+    <Property Name="ReportBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Theard">
+    <Key>
+      <PropertyRef Name="TheardID" />
+    </Key>
+    <Property Name="TheardID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TheardName" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="WishList">
+    <Key>
+      <PropertyRef Name="WishListID" />
+    </Key>
+    <Property Name="WishListID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DocumentID" Type="int" />
+  </EntityType>
+  <Association Name="FK_Account_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="Account" Type="Self.Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bin_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
+    <End Role="Bin" Type="Self.Bin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Bin">
+        <PropertyRef Name="Customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bin_Document">
+    <End Role="Document" Type="Self.Document" Multiplicity="0..1" />
+    <End Role="Bin" Type="Self.Bin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="Bin">
+        <PropertyRef Name="DocumentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comment_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
+    <End Role="Comment" Type="Self.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="ComentName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comment_TaiLieu">
+    <End Role="Document" Type="Self.Document" Multiplicity="0..1" />
+    <End Role="Comment" Type="Self.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="DocumentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Guestbook_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
+    <End Role="Guestbook" Type="Self.Guestbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Guestbook">
+        <PropertyRef Name="ChatName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="CreateBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_Theard">
+    <End Role="Theard" Type="Self.Theard" Multiplicity="0..1" />
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Theard">
+        <PropertyRef Name="TheardID" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="TheardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Report_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
+    <End Role="Report" Type="Self.Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Report">
+        <PropertyRef Name="ReportBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaiLieu_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
+    <End Role="Document" Type="Self.Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="PostBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaiLieu_DanhMuc">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Document" Type="Self.Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WishList_TaiLieu">
+    <End Role="Document" Type="Self.Document" Multiplicity="0..1" />
+    <End Role="WishList" Type="Self.WishList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="WishList">
+        <PropertyRef Name="DocumentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DocumentsModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bin" EntityType="Self.Bin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comment" EntityType="Self.Comment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Document" EntityType="Self.Document" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Guestbook" EntityType="Self.Guestbook" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Report" EntityType="Self.Report" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Theard" EntityType="Self.Theard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WishList" EntityType="Self.WishList" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Account_Role" Association="Self.FK_Account_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Account" EntitySet="Account" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bin_Account" Association="Self.FK_Bin_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Bin" EntitySet="Bin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bin_Document" Association="Self.FK_Bin_Document">
+      <End Role="Document" EntitySet="Document" />
+      <End Role="Bin" EntitySet="Bin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comment_Account" Association="Self.FK_Comment_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comment_TaiLieu" Association="Self.FK_Comment_TaiLieu">
+      <End Role="Document" EntitySet="Document" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Guestbook_Account" Association="Self.FK_Guestbook_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Guestbook" EntitySet="Guestbook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_Account" Association="Self.FK_News_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_Theard" Association="Self.FK_News_Theard">
+      <End Role="Theard" EntitySet="Theard" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Report_Account" Association="Self.FK_Report_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Report" EntitySet="Report" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaiLieu_Account" Association="Self.FK_TaiLieu_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Document" EntitySet="Document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaiLieu_DanhMuc" Association="Self.FK_TaiLieu_DanhMuc">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Document" EntitySet="Document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WishList_TaiLieu" Association="Self.FK_WishList_TaiLieu">
+      <End Role="Document" EntitySet="Document" />
+      <End Role="WishList" EntitySet="WishList" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

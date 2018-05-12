@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5a6f3869c95245a3ba96dfd916fa21c9" Name="Diagram1" ZoomLevel="34">
+        <EntityTypeShape EntityType="DocumentsModel.Account" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocumentsModel.Bin" Width="1.5" PointX="5.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocumentsModel.Category" Width="1.5" PointX="6" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocumentsModel.Comment" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocumentsModel.Guestbook" Width="1.5" PointX="5.25" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocumentsModel.Report" Width="1.5" PointX="5.25" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocumentsModel.Theard" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocumentsModel.WishList" Width="1.5" PointX="10.5" PointY="11.25" IsExpanded="true" />
+        <AssociationConnector Association="DocumentsModel.FK_Bin_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DocumentsModel.FK_Comment_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DocumentsModel.FK_Guestbook_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="DocumentsModel.FK_Report_Account" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DocumentsModel.Role" Width="1.5" PointX="0.75" PointY="11.125" />
+        <AssociationConnector Association="DocumentsModel.FK_Account_Role" />
+        <EntityTypeShape EntityType="DocumentsModel.News" Width="1.5" PointX="5.25" PointY="14.125" />
+        <AssociationConnector Association="DocumentsModel.FK_News_Account" />
+        <AssociationConnector Association="DocumentsModel.FK_News_Theard" />
+        <EntityTypeShape EntityType="DocumentsModel.Document" Width="1.5" PointX="8.25" PointY="7.625" />
+        <AssociationConnector Association="DocumentsModel.FK_TaiLieu_Account" />
+        <AssociationConnector Association="DocumentsModel.FK_Bin_Document" />
+        <AssociationConnector Association="DocumentsModel.FK_TaiLieu_DanhMuc" />
+        <AssociationConnector Association="DocumentsModel.FK_Comment_TaiLieu" />
+        <AssociationConnector Association="DocumentsModel.FK_WishList_TaiLieu" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

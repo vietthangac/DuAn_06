@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+        @Styles.Render("~/Content/css")
+        <link href="~/Content/Admin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Styles.css" rel="stylesheet" />
+    <script src="~/Content/Admin/bower_components/jquery/dist/jquery.min.js"></script>
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="menu-header">
+    @{ 
+        var session = (THPDocument.Common.UserLogin)Session[THPDocument.Common.CommonConstants.USER_SESSION];
+    }
+    <div class="container">
+        <div class="navbar-right">
+    @if (session == null)
+    {
+        <i class="fa fa-sign-in"></i> <a href="/Login">Login</a>  <i class="fa fa-user"></i> <a href ="/Register"> Register</a>
+     }
+        else
+        {
+            <i>Hello: </i><b>@session.Username</b> <i class="fa fa-sign-in"></i> @Html.ActionLink("Exit","Logout","Login")
+        }
+    </div>
+        </div>
+    </div>
+    <div class="container">
+        <img src="~/Content/logosd.png" />
+        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><i class="fa fa-home"></i>Home</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/Home/Info"><i class="fa fa-info-circle" aria-hidden="true"></i>Category</a></li>
+                        <li><a href="/Home/Contact"><i class="fa fa-envelope-open" aria-hidden="true"></i> Contact</a></li>
+                        <li><a href="/Report"><i class="fa fa-reply-all" aria-hidden="true"></i> Report</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/Search"><i class="fa fa-search"></i> Search</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    <div class="container body-content">
+        @RenderBody()
+
+    </div>
+            <footer id="footer">
+                <div class="container"> 
+                <div class="col-sm-3"> 
+                    <div class="label1">Information</div>
+                    <ul> 
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li> </ul> 
+                </div>
+                <div class="col-sm-3"> <div class="label1">Help</div> 
+                    <ul class="footer_menu"> <li><a href="#">Security</a></li>
+                    <li><a href="#">Dowload</a></li>
+                    <li><a href="#">Upload</a></li>
+                    <li><a href="#">Increase the prestige</a></li> </ul> </div>
+                <div class="col-sm-3"> 
+                    <div class="label1">Policy</div> 
+                    <ul class="footer_menu"> 
+                    <li><a href="#">Uploading Policy</a></li>
+                    <li><a href="#">Download policy</a></li>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                        </ul> 
+                </div> 
+                <div class="col-sm-3"> <div class="label1">Contact Information</div> 
+                <div class="d-cell text"> Tran Viet Thang</div>
+                <div class="d-cell text"> More </div>
+                 </div> </div>
+                <div class="copyright"> 
+                <div class="container"> 
+                    <div class="uk-grid uk-grid-small"> 
+                    <div class="uk-width-medium-1-2 uk-grid-margin"> © 2018 <a href="/"><b>Documents</b></a>. All rights reserved.
+                 </div> </div> </div> </div>
+            </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+</body>
+</html>

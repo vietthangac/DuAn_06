@@ -1,0 +1,24 @@
+﻿@model List<Data.News>
+
+    <div class="tan-title"><b><i class="fa fa-coffee" aria-hidden="true"></i> Blogs</b></div>
+    @foreach (var item in Model)
+    {
+            <div class="col-md-4">
+                <div style="padding: 8px 8px 8px 0px">
+                    @if (item.Thumbnail == null)
+                {
+                        <img src="~/Content/f7deatNoImage.png" class="img-thumbnail" />
+                    }
+                    else
+                    {
+                        <img src="data:image/gif;base64,@Convert.ToBase64String(item.Thumbnail)" width="360px" />
+                    }
+                    <h4 class="new-title"><a href="/News/Details/@item.NewsID">@item.NewsTitle</a></h4>
+                    <div class="news-content">
+                        @item.Description
+                    </div>
+                </div>
+
+            </div>
+        
+    }

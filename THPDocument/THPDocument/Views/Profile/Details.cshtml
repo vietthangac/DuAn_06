@@ -1,0 +1,86 @@
+﻿@model Data.Account
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var ListDocumentByUser = (List<Data.Document>)ViewBag.ListDocumentByUser;
+}
+@{
+    var session = (THPDocument.Common.UserLogin)Session[THPDocument.Common.CommonConstants.USER_SESSION];
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="tan-title">
+            <table width="100%">
+                <tr>
+                    <td width="10%">#</td>
+                    <td width="70%">Document</td>
+                    <td width="20%">Action</td>
+                </tr>
+            </table>
+        </div>
+        @foreach(var item in ListDocumentByUser)
+        {
+            <div class="boc-lay-tan">
+        <table width="100%">
+            <tr>
+                <td width="10%">@item.DocumentID</td>
+                <td width="70%"><a href="/Home/Details/@item.DocumentID">@item.DocumentName</a></td>
+                @if(session == null)
+                {
+                    <td width="10%"><a href="/Home/Details/@item.DocumentID"><i class="fa fa-eye"></i></a></td>
+                }
+                else
+                {
+                    <td width="20%">
+                    @Html.ActionLink("Edit", "EditDocument", new { id = item.DocumentID }, new { @class = "btn btn-primary btn-xs" })
+                       
+
+                    @*@Ajax.ActionLink("Delete", "Delete", new { id = item.DocumentID }, new AjaxOptions
+                       {
+                           Confirm = "Xác nhận xóa!",
+                           OnComplete = "$('#row_" + item.DocumentID + "').remove()",
+                           HttpMethod = "Delete"
+                       }, new { @class = "btn btn-danger btn-xs" })*@
+                    </td>
+                }
+                
+            </tr>
+        </table>
+        </div>
+        }
+
+    </div>
+    <div class="col-md-4">
+        <div class="tan-title"><b>Personal information</b></div>
+        <div class="boc-lay-tan">
+            <ul>
+                <li>Full name: @Html.DisplayFor(model => model.FullName) </li>
+                <li>Sex: @(Model.Sex == true ?"Male":"Female")</li>
+                <li>Date Of Birth: @Html.DisplayFor(model => model.DateOfBirth)</li>
+                <li>Address: @Html.DisplayFor(model => model.Address)</li>
+                <li>Email: @Html.DisplayFor(model => model.Email)</li>
+                <li>Phone: @Html.DisplayFor(model => model.PhoneNumber)</li>
+                <li>Point: @Html.DisplayFor(model => model.AccountPoint)</li>
+            </ul>
+        </div>
+        <div class="tan-gmenu"><a href="/Profile/ChangePassword/@Model.ID">Change password</a></div>
+        
+       
+    </div>
+</div>
+
+<br />
+<div>
+    <div class="tan-title">Introduce</div>
+    <div class="dl-horizontal boc-lay-tan">
+
+            @Html.DisplayFor(model => model.About)
+
+    </div>
+</div>
+<p style="text-align:right;margin-top:10px">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class="btn btn-primary" }) 
+    @Html.ActionLink("List User", "Index", "",new { @class="btn btn-success"})
+</p>

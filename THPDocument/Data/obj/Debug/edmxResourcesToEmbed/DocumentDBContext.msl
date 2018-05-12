@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DocumentsModelStoreContainer" CdmEntityContainer="DocumentsEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="DocumentsModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="AccountRate" ColumnName="AccountRate" />
+          <ScalarProperty Name="AccountPoint" ColumnName="AccountPoint" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bins">
+      <EntityTypeMapping TypeName="DocumentsModel.Bin">
+        <MappingFragment StoreEntitySet="Bin">
+          <ScalarProperty Name="BinID" ColumnName="BinID" />
+          <ScalarProperty Name="DocumentID" ColumnName="DocumentID" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="DateBuy" ColumnName="DateBuy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="DocumentsModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="DocumentsModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+          <ScalarProperty Name="ComentName" ColumnName="ComentName" />
+          <ScalarProperty Name="DateComment" ColumnName="DateComment" />
+          <ScalarProperty Name="ComentContent" ColumnName="ComentContent" />
+          <ScalarProperty Name="DocumentID" ColumnName="DocumentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guestbooks">
+      <EntityTypeMapping TypeName="DocumentsModel.Guestbook">
+        <MappingFragment StoreEntitySet="Guestbook">
+          <ScalarProperty Name="GuestbookID" ColumnName="GuestbookID" />
+          <ScalarProperty Name="ChatContent" ColumnName="ChatContent" />
+          <ScalarProperty Name="ChatTime" ColumnName="ChatTime" />
+          <ScalarProperty Name="ChatName" ColumnName="ChatName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="DocumentsModel.Report">
+        <MappingFragment StoreEntitySet="Report">
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="ReportTitle" ColumnName="ReportTitle" />
+          <ScalarProperty Name="ReportContent" ColumnName="ReportContent" />
+          <ScalarProperty Name="ReportDate" ColumnName="ReportDate" />
+          <ScalarProperty Name="ReportBy" ColumnName="ReportBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Theards">
+      <EntityTypeMapping TypeName="DocumentsModel.Theard">
+        <MappingFragment StoreEntitySet="Theard">
+          <ScalarProperty Name="TheardID" ColumnName="TheardID" />
+          <ScalarProperty Name="TheardName" ColumnName="TheardName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WishLists">
+      <EntityTypeMapping TypeName="DocumentsModel.WishList">
+        <MappingFragment StoreEntitySet="WishList">
+          <ScalarProperty Name="WishListID" ColumnName="WishListID" />
+          <ScalarProperty Name="DocumentID" ColumnName="DocumentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="DocumentsModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="DocumentsModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="TheardID" ColumnName="TheardID" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="NewsContent" ColumnName="NewsContent" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="NewsTitle" ColumnName="NewsTitle" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documents">
+      <EntityTypeMapping TypeName="DocumentsModel.Document">
+        <MappingFragment StoreEntitySet="Document">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DocumentFile" ColumnName="DocumentFile" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="PostBy" ColumnName="PostBy" />
+          <ScalarProperty Name="DatePost" ColumnName="DatePost" />
+          <ScalarProperty Name="DocumentPoint" ColumnName="DocumentPoint" />
+          <ScalarProperty Name="DocumentDescription" ColumnName="DocumentDescription" />
+          <ScalarProperty Name="DocumentContent" ColumnName="DocumentContent" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="DocumentID" ColumnName="DocumentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

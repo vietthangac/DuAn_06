@@ -1,0 +1,29 @@
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\Data.dll.config
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\Data.dll
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\Data.pdb
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\EntityFramework.dll
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\EntityFramework.xml
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Web Application\THPDocument\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\Projects\Web Application\THPDocument\Data\obj\Debug\Data.dll
+D:\Projects\Web Application\THPDocument\Data\obj\Debug\Data.pdb
+D:\Projects\Web Application\THPDocument\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\PagedList.dll
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\PagedList.Mvc.dll
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\PagedList.xml
+D:\Projects\Web Application\THPDocument\Data\bin\Debug\PagedList.Mvc.xml
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\Data.dll.config
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\Data.dll
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\Data.pdb
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\EntityFramework.dll
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\PagedList.dll
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\PagedList.Mvc.dll
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\EntityFramework.xml
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\PagedList.xml
+F:\FPT\TailLieu\THPDocument\Data\bin\Debug\PagedList.Mvc.xml
+F:\FPT\TailLieu\THPDocument\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+F:\FPT\TailLieu\THPDocument\Data\obj\Debug\Data.dll
+F:\FPT\TailLieu\THPDocument\Data\obj\Debug\Data.pdb

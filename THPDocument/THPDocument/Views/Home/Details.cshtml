@@ -1,0 +1,180 @@
+﻿@model Data.Document
+
+@{
+    ViewBag.Title = "Document";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var ListComment = (List<Data.Comment>)ViewBag.ListComment;
+    //var ListCategory = (List<Data.Category>)ViewBag.ListCategory;
+}
+@{
+    var session = (THPDocument.Common.UserLogin)Session[THPDocument.Common.CommonConstants.USER_SESSION];
+}
+<div class="col-md-9">
+    <div class="tan-title"><a href="/"><i class="fa fa-home"></i> Home</a> &gt; <a href="#"><i class="fa fa-folder"></i> @Model.Category.CategoryName</a></div>
+
+    <div class="boc-lay-tan">
+        <h4 style="text-align:center">@Model.DocumentName</h4>
+        <hr />
+        <div class="col-md-4">
+            @if (Model.Thumbnail == null)
+            {
+                <img src="~/Content/f7deatNoImage.png" class="img-thumbnail" style="width:200px;height:150px;" />
+            }
+            else
+            {
+                <img src="data:image/gif;base64,@Convert.ToBase64String(Model.Thumbnail)" class="img-thumbnail" style="width:200px;height:150px;" />
+            }
+        </div>
+        <div class="col-md-8">
+            <ul>
+                <li>Category: @Html.DisplayFor(model => model.Category.CategoryName)</li>
+                <li>At: @Html.DisplayFor(model => model.DatePost)</li>
+                <li>Point: @Html.DisplayFor(model => model.DocumentPoint) Xu</li>
+                <li>Code: @Html.DisplayFor(model => model.DocumentID)</li>
+
+            </ul>
+            <hr />
+            <p style="text-align:center">
+                <a class="btn btn-danger" href="#yeu"><i class="fa fa-heart"></i>Like</a> 
+                <a class="btn btn-success" href="#download"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download</a>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+        <hr />
+        <dl class="dl-horizontal">
+
+            <dd>
+                <b>
+                    @Html.DisplayFor(model => model.DocumentDescription)
+                </b>
+            </dd>
+            </dl>
+            <p>@Html.Raw(Model.DocumentContent)</p>
+        <div class="col-md-9">
+
+        </div>
+        <div class="col-md-3">
+            <div class="tan-gmenu"><a name="yeu"></a>Voted: <font color="red">@Model.Rate <i class="fa fa-heartbeat" aria-hidden="true"></i></font> </div>
+            <div class="boc-lay-tan">
+                @using (Html.BeginForm("Rate", "Home", new { @id = Model.DocumentID }, FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+                {
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Rate)
+                    <input type="submit" value="Like" class="btn btn-danger btn-xs" />
+                }
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <hr />
+        <b>Tag:</b> <span class="label label-danger">@Html.DisplayFor(model => model.Tag) </span>
+    </div>
+    <br />
+    <div class="tan-title"><a name="download"></a>Download</div>
+    <div class="boc-lay-tan">
+        @if (session == null)
+        {
+            <i class="fa fa-cloud-download"></i> <font color="red">You do not have permission to download files! Please <a href="/Register">register</a> to join us!</font>
+        }
+        else
+        {
+            if (Model.DocumentPoint > 0)
+            {
+                @*<font color="red">Tài liệu trả phí ~> Nhấp <a href="#"><b>Vào đây</b></a> để mua</font>*@
+                using (Html.BeginForm("DownloadCode", "Home", new { @id = Model.DocumentID }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @ViewBag.ErrPoint
+                    @Html.HiddenFor(model=>model.DocumentPoint)
+                    <center>
+                        <input type="submit" id="@Model.DocumentID" value="Download (@Model.DocumentPoint Xu)" class="btn btn-primary" />
+                    </center>
+                }
+            }
+            else
+            {
+                <i class="fa fa-cloud-download"></i> <a href="~/Content/Files/@Model.DocumentFile">@Html.DisplayFor(model => model.DocumentFile)</a>
+            }
+        }
+        
+    </div>
+    <br />
+    <div class="tan-title"><i class="fa fa-comment"></i> Comment</div>
+    @foreach (var item in ListComment)
+    {
+        <div class="tan-gmenu">
+            <i class="fa fa-user"></i> <b>@item.Account.Username</b> (<span class="grey">@item.DateComment</span>)
+        </div>
+        <div class="boc-lay-tan">
+            @Html.Raw(item.ComentContent)
+        </div>
+        <br />
+    }
+    @if (session == null)
+    {
+        
+        <div class="tan-gmenu">Please <a href="/Login">Login</a> hoặc <a href="/Register">Register</a> if you want to leave comments</div>
+    }
+    else
+    {
+        <div class="tan-gmenu">
+            @using (Html.BeginForm("Comment", "Home", new { @id = Model.DocumentID }, FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.DocumentID)
+                    @Html.HiddenFor(model => model.DatePost)
+                    @*@Html.HiddenFor(model => model.DateComment)*@
+                    @*@Html.HiddenFor(model => model.ComentName)*@
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            @*@Html.TextAreaFor(model => model.ComentContent, new { @class = "ckeditor", @id = "ckeditor1" })
+                            @Html.ValidationMessageFor(model => model.ComentContent, "", new { @class = "text-danger" })*@
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="submit" value="Summit comment" class="btn btn-primary" />
+                    </div>
+                </div>
+            }
+        </div>
+    }
+            </div>
+<div class="col-md-3">
+    <div class="tan-title">Upload by</div>
+    <div class="boc-lay-tan">
+        <ul>
+            <li><i class="fa fa-user"></i> <b>@Html.DisplayFor(model => model.Account.Username)</b></li>
+        </ul>
+    </div>
+    <div class="tan-gmenu">
+    <span style="color:#f66a0e">Contact Info</span>
+    <ul>
+        <li>
+            Phone: @Html.DisplayFor(model=>model.Account.PhoneNumber)
+        </li>
+        <li>
+            Email: @Html.DisplayFor(model=>model.Account.Email)
+        </li>
+    </ul>
+    </div>
+</div>
+@*<div class="col-md-3">
+    <div class="tan-title">Category</div>
+    @foreach (var item in ListCategory)
+    {
+        <div class="boc-lay-tan">
+            <a href="#"><i class="fa fa-tag"></i> @item.CategoryName</a>
+        </div>
+    }
+    <br />
+    <img src="~/Content/qcp.png" class="img-thumbnail" width="100%" />
+</div>*@
+
+<script src="~/Content/Admin/bower_components/ckeditor/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace(ckeditor1);
+</script>

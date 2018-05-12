@@ -1,0 +1,214 @@
+D:\Projects\Web Application\THPDocument\THPDocument\bin\ApplicationInsights.config
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\csc.exe
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\csc.exe.config
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\csc.rsp
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\csi.exe
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\csi.exe.config
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\csi.rsp
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.AppContext.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Console.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Diagnostics.Process.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.IO.Compression.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.IO.Pipes.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Security.AccessControl.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Security.Claims.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Threading.Thread.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.ValueTuple.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Xml.XPath.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\vbc.exe
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\vbc.exe.config
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\vbc.rsp
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Web Application\THPDocument\THPDocument\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Web Application\THPDocument\THPDocument\bin\THPDocument.dll.config
+D:\Projects\Web Application\THPDocument\THPDocument\bin\THPDocument.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\THPDocument.pdb
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Antlr3.Runtime.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Data.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\EntityFramework.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\EntityFramework.SqlServer.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.Web.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Newtonsoft.Json.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Net.Http.Formatting.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Helpers.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Http.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Http.WebHost.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Mvc.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Optimization.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Razor.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.WebPages.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\WebGrease.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Data.pdb
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Data.dll.config
+D:\Projects\Web Application\THPDocument\THPDocument\bin\EntityFramework.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\EntityFramework.SqlServer.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Newtonsoft.Json.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Net.Http.Formatting.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Helpers.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Http.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Http.WebHost.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Mvc.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Optimization.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.Razor.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.WebPages.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Antlr3.Runtime.pdb
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\Microsoft.AI.Web.xml
+D:\Projects\Web Application\THPDocument\THPDocument\obj\Debug\THPDocument.csprojResolveAssemblyReference.cache
+D:\Projects\Web Application\THPDocument\THPDocument\obj\Debug\THPDocument.csproj.CoreCompileInputs.cache
+D:\Projects\Web Application\THPDocument\THPDocument\obj\Debug\THPDocument.dll
+D:\Projects\Web Application\THPDocument\THPDocument\obj\Debug\THPDocument.pdb
+D:\Projects\Web Application\THPDocument\THPDocument\bin\PagedList.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\PagedList.Mvc.dll
+D:\Projects\Web Application\THPDocument\THPDocument\bin\PagedList.xml
+D:\Projects\Web Application\THPDocument\THPDocument\bin\PagedList.Mvc.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\ApplicationInsights.config
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\csc.exe
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\csc.exe.config
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\csc.rsp
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\csi.exe
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\csi.exe.config
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\csi.rsp
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.AppContext.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Collections.Immutable.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Console.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Diagnostics.Process.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.IO.Compression.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.IO.FileSystem.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.IO.Pipes.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Reflection.Metadata.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Security.AccessControl.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Security.Claims.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Security.Principal.Windows.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Threading.Thread.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.ValueTuple.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Xml.XmlDocument.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Xml.XPath.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\vbc.exe
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\vbc.exe.config
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\vbc.rsp
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\VBCSCompiler.exe
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\roslyn\VBCSCompiler.exe.config
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\THPDocument.dll.config
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\THPDocument.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\THPDocument.pdb
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Antlr3.Runtime.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Data.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\EntityFramework.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\EntityFramework.SqlServer.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.Agent.Intercept.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.DependencyCollector.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.Web.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.WindowsServer.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.ApplicationInsights.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.Web.Infrastructure.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Newtonsoft.Json.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\PagedList.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\PagedList.Mvc.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Net.Http.Formatting.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Helpers.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Http.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Http.WebHost.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Mvc.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Optimization.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Razor.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.WebPages.Deployment.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.WebPages.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.WebPages.Razor.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\WebGrease.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Data.pdb
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Data.dll.config
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\EntityFramework.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\EntityFramework.SqlServer.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\PagedList.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\PagedList.Mvc.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Newtonsoft.Json.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Net.Http.Formatting.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Helpers.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Http.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Http.WebHost.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Mvc.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Optimization.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.Razor.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.WebPages.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.WebPages.Deployment.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\System.Web.WebPages.Razor.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Antlr3.Runtime.pdb
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.ApplicationInsights.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.DependencyCollector.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.WindowsServer.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\bin\Microsoft.AI.Web.xml
+F:\FPT\TailLieu\THPDocument\THPDocument\obj\Debug\THPDocument.csprojResolveAssemblyReference.cache
+F:\FPT\TailLieu\THPDocument\THPDocument\obj\Debug\THPDocument.csproj.CoreCompileInputs.cache
+F:\FPT\TailLieu\THPDocument\THPDocument\obj\Debug\THPDocument.dll
+F:\FPT\TailLieu\THPDocument\THPDocument\obj\Debug\THPDocument.pdb

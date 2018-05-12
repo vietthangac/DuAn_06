@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THPDocument", "THPDocument\THPDocument.csproj", "{A447F1DC-F584-44C3-94A1-5E936EBF9DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{E3156E85-738B-4D48-998D-A1D26C719B78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A447F1DC-F584-44C3-94A1-5E936EBF9DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A447F1DC-F584-44C3-94A1-5E936EBF9DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A447F1DC-F584-44C3-94A1-5E936EBF9DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A447F1DC-F584-44C3-94A1-5E936EBF9DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3156E85-738B-4D48-998D-A1D26C719B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3156E85-738B-4D48-998D-A1D26C719B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3156E85-738B-4D48-998D-A1D26C719B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3156E85-738B-4D48-998D-A1D26C719B78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B8980D3-23ED-401E-9BB5-76E5EAC1FE20}
+	EndGlobalSection
+EndGlobal

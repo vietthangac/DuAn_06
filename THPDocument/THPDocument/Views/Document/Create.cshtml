@@ -1,0 +1,112 @@
+﻿@model Data.Document
+
+@{
+    ViewBag.Title = "Upload Document";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    function ShowPreview(input) {
+        if (input.files && input.files[0]) {
+            var ImageDir = new FileReader();
+            ImageDir.onload = function (e) {
+                $('#impPrev').attr('src', e.target.result)
+            }
+            ImageDir.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<script src="~/Content/Admin/bower_components/ckeditor/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace(ckeditor1);
+</script>
+<div class="tan-title">Publish document</div>
+<div class="boc-lay-tan">
+    <br />
+    @using (Html.BeginForm("Create", "Document", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.DocumentName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.DocumentName, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                    @Html.ValidationMessageFor(model => model.DocumentName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.DocumentDescription, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.DocumentDescription, new { @class = "form-control", @required = "required" })
+                    @Html.ValidationMessageFor(model => model.DocumentDescription, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.CategoryID, "Category", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("CategoryID", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.DocumentContent, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.DocumentContent, new { @class = "ckeditor", @id = "ckeditor1" })
+                    @Html.ValidationMessageFor(model => model.DocumentContent, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.DocumentPoint, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.DocumentPoint, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                    @Html.ValidationMessageFor(model => model.DocumentPoint, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            @Html.HiddenFor(model=>model.PostBy)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Thumbnail, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="boc-lay-tan">
+                        <img src="~/Content/f7deatNoImage.png" class="img-thumbnail" id="impPrev" style="height:100px;width:100px;margin:5px" />
+                        <input type="file" name="fileim" id="imageupload" accept=".png,.jpg,.gif" onchange="ShowPreview(this)" />
+                        @Html.ValidationMessageFor(model => model.Thumbnail, "", new { @class = "text-danger" })
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.DocumentFile, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="file" name="filefi" class="form-control" />
+                    @Html.ValidationMessageFor(model => model.DocumentFile, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tag, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Tag, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Tag, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Submit" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>

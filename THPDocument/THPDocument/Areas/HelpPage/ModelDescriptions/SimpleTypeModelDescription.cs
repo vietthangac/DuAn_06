@@ -1,0 +1,6 @@
+namespace THPDocument.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}

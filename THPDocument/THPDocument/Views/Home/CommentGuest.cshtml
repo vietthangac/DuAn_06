@@ -1,0 +1,10 @@
+﻿@model List<Data.Comment>
+@foreach (var item in Model)
+{
+    <div class="tan-gmenu">
+        <i class="fa fa-user"></i> <b>@item.ComentName</b> (<span class="grey">@item.DateComment</span>)
+    </div>
+        <div class="boc-lay-tan">
+            @item.ComentContent
+        </div>
+}

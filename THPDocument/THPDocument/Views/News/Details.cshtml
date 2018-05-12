@@ -1,0 +1,38 @@
+﻿@model Data.News
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var ListTheard = (List<Data.Theard>)ViewBag.ListTheard;
+}
+
+<div class="row">
+    <div class="col-md-9">
+        <div class="tan-title">
+            <a href="/"><i class="fa fa-home"></i>Home</a> &gt; <a href="#"><i class="fa fa-folder"></i> @Html.DisplayFor(model => model.Theard.TheardName)</a>
+        </div>
+        <div class="boc-lay-tan">
+            <h1>@Html.DisplayFor(model => model.NewsTitle)</h1>
+            <hr />
+            <span class="grey">Posted by:</span> <b>@Html.DisplayFor(model => model.Account.Username)</b> | <span class="grey">At:</span> <b>@Html.DisplayFor(model => model.CreateDate)</b>
+            <hr />
+            @Html.Raw(Model.NewsContent)
+            <hr />
+            Tag: <span class="label label-info">@Html.DisplayFor(model => model.Tag)</span>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="tan-title">Category</div>
+        @foreach(var item in ListTheard)
+        {
+            <div class="boc-lay-tan">
+                <a href="#"><i class="fa fa-tag"></i> @item.TheardName</a>
+            </div>
+        }
+        <br />
+            <img src="~/Content/qcp.png" class="img-thumbnail" width="100%" />
+    </div>
+</div>
+
+<div>
+</div>
